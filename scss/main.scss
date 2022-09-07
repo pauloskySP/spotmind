@@ -1,7 +1,18 @@
 
+@import "tokens";
 $primary-color: #0072ce;
 
-body {
- background-color: $primary-color;
+$breakpoint-mobile: 600px;
+html {
+  font-size: 18px;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 16px;
+  }
+}
 
+body {
+  background: var(--bg-level-0);
+  @media (max-width: $breakpoint-mobile) {
+    background: #0f0;
+  }
 }
