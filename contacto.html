@@ -1,0 +1,45 @@
+<form id="contact-form" class="form-horizontal" action="contacto.php" method="post">
+
+    <fieldset class="footer-item ">
+        <div class="col6-lg col12-md borderLineContact">
+
+            <h6>Soluciones eléctricas<br /> <strong> Contáctanos </strong></h6>
+            <p>Si buscas soluciones eléctricas en TZZ estamos atentos
+                a tus consultas:</p>
+
+            <span><i class="fas fa-envelope"></i>contacto@tzz.cl</span>
+            <span><i class="fas fa-phone"></i> +56 2 34343434</span>
+            <span><i class="fas fa-map-marker-alt"></i> Padre Mariano 391, oficina 709. Providencia, Santiago -
+                Chile</span>
+        </div>
+        <div class="col6-lg col12-md">
+            <div class="control-group">
+                <label class="control-label" for="nombre">Nombre</label>
+                <div class="controls">
+                    <input class="input-xlarge" id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido"
+                        required />
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="email">Email</label>
+                <div class="controls">
+                    <input class="input-xlarge" id="email" type="email" name="email" placeholder="ejemplo@correo.com"
+                        required />
+
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="mensaje">Mensaje</label>
+                <div class="controls">
+                    <textarea class="input-xlarge" rows="3" id="mensaje" name="mensaje" placeholder="Mensaje"
+                        required></textarea>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" name="submit" value="Enviar" class="btn btn-primary">Enviar</button>
+
+            </div>
+        </div>
+    </fieldset>
+</form>

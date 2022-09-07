@@ -1,18 +1,3 @@
-
-
-## Sass Setup
-Install gulp gulp-sass browser-sync:
-* npm init --yes
-* create sass folder
-* create css folder
-* npm install gulp-cli -g
-* npm install --save-dev gulp gulp-sass browser-sync
-* Create Gulpfile.js
-
-
-
-## Gulpfile
-```
 var gulp = require('gulp');  
 var sass = require('gulp-sass');  
 var browserSync = require('browser-sync').create();
@@ -46,8 +31,3 @@ function watch(){
 
 exports.style = style
 exports.watch = watch
-
-```
-
-## How to run 
-* gulp watch
