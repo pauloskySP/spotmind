@@ -7,7 +7,7 @@ html {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-small) {
     font-size: 16px;
     
   }
@@ -17,12 +17,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $breakpoint-small) {
     background: $primary-color;
   }
 }
 .float-right{
   float: right!important;
+}
+.float-left{
+  float: left!important;
 }
 .float-center{
   margin: 0 auto!important;
@@ -49,6 +52,27 @@ body {
   } 
 }
 
+.m-left{
+  &--4{
+    margin-left: 4px!important;
+  } 
+  &--8{
+    margin-left: 8px!important;
+  }
+  &--14{
+    margin-left: 14px!important;
+  }  
+  &--16{
+    margin-left: 16px!important;
+  } 
+  &--24{
+    margin-left: 24px!important;
+  } 
+  &--32{
+    margin-left: 32px!important;
+  } 
+}
+
 .header {
   width:100%;
   float: left;
@@ -61,6 +85,10 @@ body {
     height: auto;
     margin: 0 auto;
     padding-top: $space-3;
+   
+    @media (max-width: $breakpoint-medium) {
+      width:100%!important;
+    }
 
   }
 
@@ -82,7 +110,7 @@ body {
     color: var(--primary-700);
     width: 50%;
     margin: $space-6 auto 0;
-    @media (max-width: $breakpoint-mobile) {
+    @media (max-width: $breakpoint-small) {
       @include typo(Title-Small, bold);
     }
   }
@@ -92,7 +120,7 @@ body {
       color: var(--primary-800);
       width: 50%;
       margin: $space-4 auto;
-      @media (max-width: $breakpoint-mobile) {
+      @media (max-width: $breakpoint-small) {
         @include typo(Title-Small, bold);
       }  
     }  
@@ -115,7 +143,9 @@ body {
     width:980px;
     height: auto;
     margin: 0 auto;
-
+    @media (max-width: 980px) {
+      width:100%;
+    }
   }
   &__title{
     float: left;
@@ -155,15 +185,42 @@ body {
   height: auto;
   float: left;
   margin-bottom: $space-6;
+  & li{
+    margin: $space-2 0;
+  }
   &__cont{
     width:1440px;
   margin: 0 auto;
-  height: 580px;
-  background-color: #ccc;
-
-
+  height: auto;
+  @media (max-width: $breakpoint-medium) {
+    width:100%;
   }
 
+&--left {
+  width:50%;
+  float: left;
+  padding: 24px;
+  box-sizing: border-box;
+  @include typo(Body-Large, 400);
+  color: var(--primary-800);
+  & img {
+    width: 80%;
+  }
+}
+&--right {
+  width:50%;
+  float: left;
+  padding: 24px;
+  box-sizing: border-box;
+  & img {
+    width: 80%;
+  }
+}
+  }
+&__cont-button{
+  width: 100%;
+  margin-top: $space-5;
+}
 }
 
 .row-prefoter{
@@ -194,14 +251,14 @@ body {
   flex-flow: column wrap;
   margin: 0;
   outline: unset;
-  padding: $space-1 $space-2;
+  padding: $space-2 $space-3;
   position: relative;
   text-align: center;
   border: none;
   overflow: hidden;
   text-rendering: geometricPrecision;
   @include typo(Body-Medium, 800);
-  border-radius: $space-2;
+  border-radius: $space-1;
       
  
   & i {
@@ -281,26 +338,27 @@ body {
   }
 
   &__ghost {
-      color: var(--secundary) !important;
-      border: solid var(--secundary) 2px;
+      color:  var(--acent-500) !important;
+      border: solid var(--acent-500) 2px;
       background-position: center;
       transition: background 0.8s;
       background: unset;
       color: unset;
+      padding: 14px 24px!important;
 
       &:hover {
-          border-color: var(--secundary-hover) !important;
+          border-color: $brand-secundary !important;
           color: #fff !important;
-          background: var(--secundary-hover) radial-gradient(circle, transparent 1%, var(--secundary-hover) 1%)
+          background: $brand-secundary radial-gradient(circle, transparent 1%, $brand-secundary 1%)
               center/15000%;
           box-shadow: 0px 1px 4px rgba(14, 31, 53, 0.12), 0px 4px 8px rgba(14, 31, 53, 0.08);
       }
 
       &:active {
-          border-color: var(--secundary-active) !important;
+          border-color: var(--secundary-400) !important;
           color: #fff !important;
 
-          background-color: var(--secundary-active);
+          background-color: var(--secundary-400);
           box-shadow: inset 1px 6px 16px rgba(0, 0, 0, 0.25);
           background-size: 100%;
           transition: background 0s;
