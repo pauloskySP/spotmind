@@ -30,16 +30,22 @@ body {
 
 .m-top{
   &--4{
-    margin-top: $space-0!important;
+    margin-top: 4px!important;
   } 
   &--8{
-    margin-top: $space-1!important;
+    margin-top: 8px!important;
   }
   &--14{
     margin-top: 14px!important;
   }  
   &--16{
-    margin-top: $space-3!important;
+    margin-top: 16px!important;
+  } 
+  &--24{
+    margin-top: 24px!important;
+  } 
+  &--32{
+    margin-top: 32px!important;
   } 
 }
 
@@ -105,9 +111,21 @@ body {
   background-color: $gray-800;
   color: $gray-100;
   margin-bottom: $space-6;
+  &__cont {
+    width:980px;
+    height: auto;
+    margin: 0 auto;
 
+  }
   &__title{
+    float: left;
     @include typo(Title-Medium, bold);
+  }
+  &__logos{
+    float: left;
+    & img{
+      margin: 0 $space-4
+    }
   }
 
 }
