@@ -12,13 +12,7 @@ html {
     
   }
 }
-h1 {
-  @include typo(Display-Large, 400);
-  @media (max-width: $breakpoint-mobile) {
-    @include typo(Title-Small, bold);
-  }
 
-}
 
 body {
   margin: 0;
@@ -28,7 +22,10 @@ body {
   }
 }
 .float-right{
-  float: right;
+  float: right!important;
+}
+.float-center{
+  margin: 0 auto!important;
 }
 
 .m-top{
@@ -69,6 +66,36 @@ body {
   width:100%;
   float: left;
   height: 542px;
+  background: url(../img/bkgheroImage.webp);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  & h1 {
+    @include typo(Display-Large, 700);
+    text-align: center;
+    color: var(--primary-700);
+    width: 50%;
+    margin: $space-6 auto 0;
+    @media (max-width: $breakpoint-mobile) {
+      @include typo(Title-Small, bold);
+    }
+  }
+    & p {
+      @include typo(Headline-Medium, 400);
+      text-align: center;
+      color: var(--primary-800);
+      width: 50%;
+      margin: $space-4 auto;
+      @media (max-width: $breakpoint-mobile) {
+        @include typo(Title-Small, bold);
+      }  
+    }  
+
+    & span {
+      color:$brand-acent!important;
+    }
+  
+  
 }
 
 .paterns-section{
