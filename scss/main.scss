@@ -1,18 +1,120 @@
 
 @import "tokens";
-$primary-color: #0072ce;
 
-$breakpoint-mobile: 600px;
+
+
 html {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
   @media (max-width: $breakpoint-mobile) {
     font-size: 16px;
+    
   }
+}
+h1 {
+  @include typo(Display-Large, 400);
+  @media (max-width: $breakpoint-mobile) {
+    @include typo(Title-Small, bold);
+  }
+
 }
 
 body {
-  background: var(--bg-level-0);
+  
+  margin: 0;
+  padding: 0;
   @media (max-width: $breakpoint-mobile) {
-    background: #0f0;
+    background: $primary-color;
   }
 }
+
+
+.header{
+  width:100%;
+  float: left;
+  height: 114px;
+  background-color:var(--primary-800);
+  color: $gray-100;
+
+  
+
+}
+
+.hero-section {
+  width:100%;
+  float: left;
+  height: 542px;
+}
+
+.paterns-section{
+  width:100%;
+  float: left;
+  height: 100px;
+  background-color: $gray-800;
+  color: $gray-100;
+  margin-bottom: $space-6;
+
+  &__title{
+    @include typo(Title-Medium, bold);
+  }
+
+}
+
+
+.title-section{
+  width:100%;
+  float: left;
+  height: 108px;
+  color: $gray-800;
+  margin-bottom: $space-6;
+  text-align: center;
+
+  &__title{
+    @include typo(Headline-Large, bold);
+  }
+  &__icon{
+    
+  }
+
+}
+
+.row-section {
+  width:100%;
+  margin: 0 auto;
+  height: auto;
+  float: left;
+  margin-bottom: $space-6;
+  &__cont{
+    width:1440px;
+  margin: 0 auto;
+  height: 580px;
+  background-color: #ccc;
+
+
+  }
+
+}
+
+.row-prefoter{
+  width:100%;
+  background-color: $brand-primary;
+  height: 252px;
+  float: left;
+  text-align: center;
+  @include typo(Title-Large, bold);
+  color: $white;
+}
+
+.foter{
+  width:100%;
+  background-color: var(--primary-800);
+  height: 23px;
+  float: left;
+  text-align: center;
+  @include typo(Overline, regular);
+  color: $white;
+}
+
+
+

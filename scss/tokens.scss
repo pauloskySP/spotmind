@@ -1,6 +1,46 @@
 /*variable definitions*/
 [data-theme="light"] {
   
+  --brand-primary: hsl(233, 59%, 19%);
+  --brand-secundary: hsl(359, 83%, 59%);
+  --brand-acent: hsl(23, 100%, 60%);
+
+   /*ACENT COLOR WEB*/
+  --acent-50: hsl(23, 100%, 95%);
+  --acent-100: hsl(23, 100%, 90%);
+  --acent-200: hsl(23, 100%, 80%);
+  --acent-300: hsl(23, 100%, 70%);
+  --acent-400: hsl(23, 100%, 60%);
+  --acent-500: hsl(23, 100%, 50%);
+  --acent-600: hsl(23, 100%, 40%);
+  --acent-700: hsl(23, 100%, 30%);
+  --acent-800: hsl(23, 100%, 20%);
+  --acent-900: hsl(23, 100%, 10%);
+
+ /*PRIMARY COLOR WEB*/
+  --primary-50: hsl(233, 59%, 95%);
+  --primary-100: hsl(233, 59%, 90%);
+  --primary-200: hsl(233, 59%, 70%);
+  --primary-300: hsl(233, 59%, 60%);
+  --primary-400: hsl(233, 59%, 50%);
+  --primary-500: hsl(233, 59%, 40%);
+  --primary-600: hsl(233, 59%, 30%);
+  --primary-700: hsl(233, 59%, 20%);
+  --primary-800: hsl(233, 59%, 10%);
+  --primary-900: hsl(233, 59%, 5%);
+
+   /*SECUNDARY COLOR WEB*/
+  --secundary-50: hsl(359, 82%, 95%);
+  --secundary-100: hsl(359, 82%, 80%);
+  --secundary-200: hsl(359, 82%, 70%);
+  --secundary-300: hsl(359, 82%, 60%);
+  --secundary-400: hsl(359, 82%, 50%);
+  --secundary-500: hsl(359, 82%, 40%);
+  --secundary-600: hsl(359, 82%, 30%);
+  --secundary-700: hsl(359, 82%, 20%);
+  --secundary-800: hsl(359, 82%, 10%);
+  --secundary-900: hsl(359, 82%, 5%);
+
 
      /*BACKGRAUND & LEVEL*/
      --bg-level-3: hsla(0, 0%, 10%, 20%);
@@ -17,6 +57,47 @@
    }
    
    [data-theme="dark"] {
+
+    --brand-primary: hsl(0, 0%, 100%);
+    --brand-secundary: hsl(23, 100%, 60%);
+    --brand-acent: hsl(23, 90%, 60%);
+  
+     /*ACENT COLOR WEB*/
+    --acent-50: hsl(23, 70%, 95%);
+    --acent-100: hsl(23, 70%, 90%);
+    --acent-200: hsl(23, 70%, 80%);
+    --acent-300: hsl(23, 70%, 70%);
+    --acent-400: hsl(23, 70%, 60%);
+    --acent-500: hsl(23, 70%, 50%);
+    --acent-600: hsl(23, 70%, 40%);
+    --acent-700: hsl(23, 70%, 30%);
+    --acent-800: hsl(23, 70%, 20%);
+    --acent-900: hsl(23, 70%, 10%);
+  
+   /*PRIMARY COLOR WEB*/
+    --primary-50: hsl(233, 40%, 95%);
+    --primary-100: hsl(233, 40%, 90%);
+    --primary-200: hsl(233, 40%, 70%);
+    --primary-300: hsl(233, 40%, 60%);
+    --primary-400: hsl(233, 40%, 50%);
+    --primary-500: hsl(233, 40%, 40%);
+    --primary-600: hsl(233, 40%, 30%);
+    --primary-700: hsl(233, 40%, 20%);
+    --primary-800: hsl(233, 40%, 10%);
+    --primary-900: hsl(233, 40%, 5%);
+  
+     /*SECUNDARY COLOR WEB*/
+    --secundary-50: hsl(359, 70%, 95%);
+    --secundary-100: hsl(359, 70%, 80%);
+    --secundary-200: hsl(359, 70%, 70%);
+    --secundary-300: hsl(359, 70%, 60%);
+    --secundary-400: hsl(359, 70%, 50%);
+    --secundary-500: hsl(359, 70%, 40%);
+    --secundary-600: hsl(359, 70%, 30%);
+    --secundary-700: hsl(359, 70%, 20%);
+    --secundary-800: hsl(359, 70%, 10%);
+    --secundary-900: hsl(359, 70%, 5%);
+  
       
    /*BACKGRAUND & LEVEL*/
    --bg-level-3: hsla(0, 0%, 100%, 20%);
@@ -37,28 +118,173 @@
      --textColor-medium: hsl(0, 0, 85);
    
     }
+/*GRAY COLOR PALLETTE*/ 
+     
+$gray-15: hsl(0, 0%, 15%); 
+$gray-25: hsl(0, 0%, 25%);
+$gray-35: hsl(0, 0%, 35%);
+$gray-50: hsl(0, 0%, 50%);
+$gray-75: hsl(0, 0%, 75%);
+$gray-85: hsl(0, 0%, 85%); 
+$gray-95: hsl(0, 0%, 95%); 
+$white: hsl(0, 0%, 100%);
+$black:hsl(0, 0%, 0%);
 
-    @mixin typo($scale, $weight) {
+
+$brand-primary: hsl(233, 59%, 19%);
+
+
+
+$gray-50: hsl(217, 10%, 95%);
+$gray-100: hsl(217, 10%, 85%);
+$gray-200: hsl(217, 10%, 75%);
+$gray-300: hsl(217, 10%, 65%);
+$gray-400: hsl(217, 10%, 55%);
+$gray-500: hsl(217, 10%, 45%);
+$gray-600: hsl(217, 10%, 35%);
+$gray-700: hsl(217, 10%, 25%);
+$gray-800: hsl(217, 10%, 15%);
+$gray-900: hsl(217, 10%, 5%);
+
+
+$breakpoint-mobile: 600px;
+
+    $space-0: 4px;
+    $space-1: 8px;
+    $space-2: 16px;
+    $space-3: 24px;
+    $space-4: 32px;
+    $space-5: 48px;
+    $space-6: 96px;
+    $space-7: 128px;
+    $space-8: 208px;
+    $space-9: 248px;
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+ $font-family-text:'Roboto Flex', sans-serif;
+$font-family-display:'Roboto Serif', serif;
+
+
+    @mixin typo($scale: 'Body-Medium', $weight:'normal') {
 
         @if $scale == 'Display-Large' {
-        font-family: $font-family-primary;
-        font-size: 48px;
+        font-family: $font-family-display;
+        font-size: 3.247rem; 
         line-height: 125%;
         font-weight: $weight;
       
         } 
         @if $scale == 'Display-Medium' {
-            font-family: $font-family-primary;
-            font-size: 48px;
+            font-family: $font-family-display;
+            font-size: 2.887rem;
             line-height: 125%;
             font-weight: $weight;
           
             } 
             @if $scale == 'Display-Small' {
-                font-family: $font-family-primary;
-                font-size: 48px;
+                font-family: $font-family-text;
+                font-size: 2.566rem ;
                 line-height: 125%;
                 font-weight: $weight;
               
                 } 
+
+                @if $scale == 'Headline-Large' {
+                  font-family: $font-family-text;
+                  font-size: 2.281rem;
+                  line-height: 125%;
+                  font-weight: $weight;
+                
+                  } 
+
+                  @if $scale == 'Headline-Medium' {
+                    font-family: $font-family-text;
+                    font-size: 2.027rem;
+                    line-height: 125%;
+                    font-weight: $weight;
+                  
+                    } 
+                    @if $scale == 'Headline-Small' {
+                      font-family: $font-family-text;
+                      font-size: 1.802rem;
+                      line-height: 125%;
+                      font-weight: $weight;
+                    
+                      } 
+
+                      @if $scale == 'Title-Large' {
+                        font-family: $font-family-text;
+                        font-size: 1.602rem;
+                        line-height: 125%;
+                        font-weight: $weight;
+                      
+                        } 
+                        @if $scale == 'Title-Medium' {
+                          font-family: $font-family-text;
+                          font-size: 1.424rem;
+                          line-height: 125%;
+                          font-weight: $weight;
+                        
+                          } 
+                          @if $scale == 'Title-Small' {
+                            font-family: $font-family-text;
+                            font-size: 1.266rem;
+                            line-height: 125%;
+                            font-weight: $weight;
+                          
+                            } 
+
+                            @if $scale == 'Body-Large' {
+                              font-family:$font-family-text;
+                              font-size: 1.125rem;
+                              line-height: 125%;
+                              font-weight: $weight;
+                            
+                              } 
+
+                              @if $scale == 'Body-Medium' {
+                                font-family: $font-family-text;
+                                font-size: 1rem;
+                                line-height: 125%;
+                                font-weight: $weight;
+                              
+                                } 
+
+                                @if $scale == 'Body-Small' {
+                                  font-family: $font-family-text;
+                                  font-size: 48px;
+                                  line-height: 125%;
+                                  font-weight: $weight;
+                                
+                                  } 
+
+                                  @if $scale == 'Body-Small' {
+                                    font-family: $font-family-primary;
+                                    font-size: 0.889rem;
+                                    line-height: 125%;
+                                    font-weight: $weight;
+                                  
+                                    } 
+
+                                    @if $scale == 'Overline' {
+                                      font-family:$font-family-text;
+                                      font-size: 0.79rem;
+                                      line-height: 125%;
+                                      font-weight: $weight;
+                                    
+                                      } 
+
+                                      @if $scale == 'Caption' {
+                                        font-family: $font-family-text;
+                                        font-size: 0.702rem;
+                                        line-height: 125%;
+                                        font-weight: $weight;
+                                      
+                                        } 
     }
+
+
+    $primary-color: #0072ce;
