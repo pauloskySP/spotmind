@@ -135,15 +135,16 @@ body {
   width:100%;
   float: left;
   height: 108px;
-  color: $gray-800;
+  color: $brand-primary;
   margin-bottom: $space-6;
   text-align: center;
 
   &__title{
     @include typo(Headline-Large, bold);
+
   }
-  &__icon{
-    
+  &__icon {
+    margin: 0 auto;
   }
 
 }
