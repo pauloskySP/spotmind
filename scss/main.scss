@@ -21,21 +21,45 @@ h1 {
 }
 
 body {
-  
   margin: 0;
   padding: 0;
   @media (max-width: $breakpoint-mobile) {
     background: $primary-color;
   }
 }
+.float-right{
+  float: right;
+}
 
+.m-top{
+  &--4{
+    margin-top: $space-0!important;
+  } 
+  &--8{
+    margin-top: $space-1!important;
+  }
+  &--14{
+    margin-top: 14px!important;
+  }  
+  &--16{
+    margin-top: $space-3!important;
+  } 
+}
 
-.header{
+.header {
   width:100%;
   float: left;
   height: 114px;
   background-color:var(--primary-800);
   color: $gray-100;
+
+   &__cont {
+    width:1440px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: $space-3;
+
+  }
 
   
 
@@ -116,5 +140,145 @@ body {
   color: $white;
 }
 
+.button {
+  margin: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  outline: unset;
+  padding: $space-1 $space-2;
+  position: relative;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+  text-rendering: geometricPrecision;
+  @include typo(Body-Medium, 800);
+  border-radius: $space-2;
+      
+ 
+  & i {
+      display: inline-block;
+      vertical-align: top;
+      width: auto !important;
+      margin: 0 !important;
+  }
+
+  &:hover {
+      transition: 0.3s ease;
+  }
+
+  
+
+  &--left-icon {
+      /* padding: 8px 32px 8px 0 !important;
+        display: block;*/
+      display: inline-block;
+      vertical-align: top;
+      padding: 8px 32px 8px 16px !important;
+
+      & i:last-child {
+          display: none !important;
+      }
+  }
+
+  &--right-icon {
+      /* padding: 8px 0 8px 32px !important;
+    display: block;*/
+      display: inline-block;
+      vertical-align: top;
+      padding: 8px 16px 8px 32px !important;
+
+      & i:first-child {
+          display: none;
+      }
+  }
+
+  &--no-icon {
+      & i {
+          display: none;
+      }
+  }
+
+  &__primary {
+      background: var(--acent-500);
+      color: $gray-50 !important;
+      background-position: center;
+      transition: background 0.8s;
+
+      &:hover {
+          background-color: $brand-secundary;
+          box-shadow: 0px 1px 4px rgba(14, 31, 53, 0.12), 0px 4px 8px rgba(14, 31, 53, 0.08);
+          background: $brand-secundary radial-gradient(circle, transparent 1%, $brand-secundary 1%) center/15000%;
+      }
+
+      &:active {
+          background-color: var(--secundary-400);
+          box-shadow: inset 1px 6px 16px rgba(0, 0, 0, 0.25);
+          background-size: 100%;
+          transition: background 0s;
+      }
+      &--disabled {
+          background-color: var(--gray-lighten)!important;
+          color: var(--gray-light)!important;
+          cursor: default;
+          &:hover {
+              background-color: unset;
+              box-shadow: unset;
+              background: unset;
+          }
+
+     
+  }
+    
+  }
+
+  &__ghost {
+      color: var(--secundary) !important;
+      border: solid var(--secundary) 2px;
+      background-position: center;
+      transition: background 0.8s;
+      background: unset;
+      color: unset;
+
+      &:hover {
+          border-color: var(--secundary-hover) !important;
+          color: #fff !important;
+          background: var(--secundary-hover) radial-gradient(circle, transparent 1%, var(--secundary-hover) 1%)
+              center/15000%;
+          box-shadow: 0px 1px 4px rgba(14, 31, 53, 0.12), 0px 4px 8px rgba(14, 31, 53, 0.08);
+      }
+
+      &:active {
+          border-color: var(--secundary-active) !important;
+          color: #fff !important;
+
+          background-color: var(--secundary-active);
+          box-shadow: inset 1px 6px 16px rgba(0, 0, 0, 0.25);
+          background-size: 100%;
+          transition: background 0s;
+      }
+
+      &--disabled {
+          background-color: var(--gray-lighten)!important;
+          color: var(--gray-light)!important;
+          border-color: var(--gray-light)!important;
+          cursor: default;
+          &:hover {
+              background-color: unset;
+              box-shadow: unset;
+              background: unset;
+          }
+
+     
+  }
+  }
+}
+
+.button.icon {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 
 
