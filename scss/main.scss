@@ -128,7 +128,13 @@ body {
   height: 114px;
   background-color:var(--primary-800);
   color: $gray-100;
+  & button {
 
+    @media (max-width: $breakpoint-tiny) {
+     display: none!important;
+  
+    }
+  }
 
   & img {
     width: auto;
@@ -137,6 +143,9 @@ body {
       margin-top: 13px;
   
     }
+
+
+
   
   }
 
@@ -148,7 +157,7 @@ body {
     padding-top: $space-3;
     box-sizing: border-box;
    
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-large) {
       width:100%!important;
       padding: $space-3 $space-3!important;
 
@@ -177,6 +186,12 @@ body {
     color: var(--primary-700);
     width: 50%;
     margin: $space-6 auto 0;
+
+    @media (max-width: $breakpoint-large) {
+    width:90%;
+    }
+
+
     @media (max-width: $breakpoint-small) {
       @include typo(Headline-Medium, bold);
       width:90%;
@@ -188,9 +203,12 @@ body {
       color: var(--primary-800);
       width: 50%;
       margin: $space-4 auto;
+      
+      @media (max-width: $breakpoint-small) {
+        width: 90%;
+      } 
       @media (max-width: $breakpoint-small) {
         @include typo(Title-Small, bold);
-        width: 90%;
       }  
     }  
 
@@ -312,7 +330,7 @@ body {
   left: 83px;
   border-radius: 16px;
 
-  @media (max-width: $breakpoint-medium) {
+  @media (max-width: $breakpoint-large) {
   display: none;
   }
 
@@ -322,7 +340,7 @@ body {
   margin: 0 auto;
   height: auto;
   
-  @media (max-width: $breakpoint-medium) {
+  @media (max-width: $breakpoint-large) {
     width:100%;
   }
 
@@ -355,7 +373,7 @@ body {
     position: absolute;
     z-index: 2;
 
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-large) {
     position: relative;
     width: 100%;
     }
@@ -390,7 +408,7 @@ body {
   margin: 0 32px;
 }
   
-  @media (max-width: $breakpoint-medium) {
+  @media (max-width: $breakpoint-large) {
     width:100%;
   }
 
@@ -413,7 +431,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     float: left;
-    margin: 32px auto 110px auto;
+    margin: 32px auto 180px auto;
     @media (max-width: $breakpoint-small) {
       margin: 32px auto;
       }
@@ -421,7 +439,7 @@ body {
       width:1440px;
       margin: 0 auto;
       height: auto;
-      @media (max-width: $breakpoint-medium) {
+      @media (max-width: $breakpoint-large) {
         width:100%;
       }
      
