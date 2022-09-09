@@ -128,6 +128,8 @@ body {
   height: 114px;
   background-color:var(--primary-800);
   color: $gray-100;
+  position: fixed;
+    z-index: 9;
   & button {
 
     @media (max-width: $breakpoint-tiny) {
@@ -144,9 +146,6 @@ body {
   
     }
 
-
-
-  
   }
 
 
@@ -176,6 +175,8 @@ body {
   background: url(../img/bkgheroImage.webp);
   background-repeat: no-repeat;
   background-size: auto;
+  text-align: center;
+  margin-top: 114px;
   @media (max-width: $breakpoint-small) {
     height: auto;
     padding-bottom: 96px;
@@ -245,6 +246,10 @@ body {
     float: left;
     @include typo(Title-Medium, bold);
     margin-top: 32px;
+    @media (max-width: $breakpoint-medium) {
+      display: none;
+    }
+    
     @media (max-width: $breakpoint-small) {
       @include typo(Body-Large, bold);
       margin-top: 12px;
@@ -314,7 +319,7 @@ body {
   margin: 0 12px;
   float: left;
 
-  @media (max-width: $breakpoint-small) {
+  @media (max-width: $breakpoint-medium) {
     margin: 12px;
     width: 80%;
     float: left;
@@ -349,7 +354,7 @@ body {
 &--left {
   width:50%;
   float: left;
-  padding: 24px;
+  padding: 24px 24px 24px 48px;
   box-sizing: border-box;
   position:relative;
   @include typo(Body-Large, 400);
@@ -497,6 +502,12 @@ body {
   box-sizing: border-box;
   @include typo(Title-Large, bold);
   color: $white;
+
+  & button{
+    display: block;
+  }
+
+
 }
 
 .footer{
@@ -512,12 +523,10 @@ body {
 }
 
 .button {
-  margin: 30px;
   box-sizing: border-box;
   cursor: pointer;
-  display: flex;
-  flex-flow: column wrap;
-  margin: 0;
+  
+
   outline: unset;
   padding: $space-2 $space-3;
   position: relative;
@@ -527,6 +536,7 @@ body {
   text-rendering: geometricPrecision;
   @include typo(Body-Medium, 800);
   border-radius: $space-1;
+  text-align: center;
       
  
   & i {
@@ -577,6 +587,7 @@ body {
       color: $gray-50 !important;
       background-position: center;
       transition: background 0.8s;
+      text-align: center;
 
       &:hover {
           background-color: $brand-secundary;
@@ -613,6 +624,7 @@ body {
       background: unset;
       color: unset;
       padding: 14px 24px!important;
+      text-align: center;
 
       &:hover {
           border-color: $brand-secundary !important;
@@ -654,3 +666,15 @@ body {
 }
 
 
+#background-video {
+  height: 675px;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter:opacity(25%);
+}
