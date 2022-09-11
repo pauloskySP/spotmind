@@ -320,8 +320,8 @@ body {
   float: left;
 
   @media (max-width: $breakpoint-medium) {
-    margin: 12px;
-    width: 80%;
+    margin: 12px 0;
+    width: 100%;
     float: left;
     }
 }

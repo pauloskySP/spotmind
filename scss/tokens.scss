@@ -175,14 +175,14 @@ $font-family-display:'Roboto Serif', serif;
     @mixin typo($scale: 'Body-Medium', $weight:'normal') {
 
         @if $scale == 'Display-Large' {
-        font-family: $font-family-display;
+        font-family: $font-family-text;
         font-size: 3.247rem; 
         line-height: 125%;
         font-weight: $weight;
       
         } 
         @if $scale == 'Display-Medium' {
-            font-family: $font-family-display;
+            font-family: $font-family-text;
             font-size: 2.887rem;
             line-height: 125%;
             font-weight: $weight;
