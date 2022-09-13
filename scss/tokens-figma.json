@@ -8,10 +8,34 @@
       }
     }
   },
+  "light": {
+    "brand-acent": {
+      "value": "#ff6600",
+      "type": "color",
+      "description": "hsl:24,100,50/cmyk:0,65,100,0/Pantone:021C"
+    },
+    "brand-primary": {
+      "value": "#141b4d",
+      "type": "color",
+      "description": "hsl(233,59%,19%)/cmyk:100,94,0,47/pantone:2766C"
+    }
+  },
+  "spacing": {
+    "spacer-0": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "spacer-1": {
+      "value": "8px",
+      "type": "spacing"
+    }
+  },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global"
+      "global",
+      "light",
+      "spacing"
     ]
   }
 }
