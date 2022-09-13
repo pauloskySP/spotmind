@@ -1,0 +1,17 @@
+{
+  "global": {
+    "light": {
+      "brand-acent": {
+        "value": "hsl(24, 100%, 50%)",
+        "type": "color",
+        "description": "Brand acent hex:#ff6600/cmyk:0,65,100, 0/Pantone: 021C"
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}
