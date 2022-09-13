@@ -10,8 +10,14 @@
   },
   "light": {
     "brand-acent": {
-      "value": "hsl(24,100%,50%)",
-      "type": "color"
+      "value": "#ff6600",
+      "type": "color",
+      "description": "hsl:24,100,50/cmyk:0,65,100,0/Pantone:021C"
+    },
+    "brand-primary": {
+      "value": "#141b4d",
+      "type": "color",
+      "description": "hsl(233,59%,19%)/cmyk:100,94,0,47/pantone:2766C"
     }
   },
   "spacing": {
